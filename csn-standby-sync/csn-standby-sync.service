@@ -1,0 +1,16 @@
+[Unit]
+Description=CSN old-to-new Dovecot standby synchronization
+After=network-online.target dovecot.service
+Wants=network-online.target
+ConditionPathExists=/etc/csn-standby-sync/armed
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/csn-standby-sync
+UMask=0077
+PrivateTmp=yes
+NoNewPrivileges=yes
+TimeoutStartSec=25min
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7

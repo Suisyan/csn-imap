@@ -1,0 +1,31 @@
+# Private migration data and credentials
+/.migration-data/
+/.migration-ssh/
+/mail-vps3-key.pem
+*.pem
+*.key
+*.p12
+*.pfx
+*.cms
+*.age
+*.gpg
+/.env
+/.env.*
+!/.env.example
+/id_rsa
+/id_ed25519
+
+# Runtime output
+*.log
+*.err
+*.stderr
+*.pid
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Editor and OS files
+.DS_Store
+*~
+*.swp

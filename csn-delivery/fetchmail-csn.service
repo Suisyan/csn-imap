@@ -1,0 +1,23 @@
+[Unit]
+Description=Fetch CSN mail from iCLUSTA via local Postfix
+Wants=network-online.target
+After=network-online.target postfix.service
+ConditionPathExists=/etc/csn-mail/enable-fetch
+ConditionPathExists=/home/fetchcsn/.fetchmailrc
+
+[Service]
+Type=oneshot
+User=fetchcsn
+Group=fetchcsn
+Environment=HOME=/home/fetchcsn
+ExecStart=/usr/bin/fetchmail --nodetach --daemon 0 -f /home/fetchcsn/.fetchmailrc
+SuccessExitStatus=1
+TimeoutStartSec=15min
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/fetchcsn
+StandardOutput=journal
+StandardError=journal

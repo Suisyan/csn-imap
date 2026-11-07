@@ -1,0 +1,31 @@
+# DRAFT: passwords must be supplied locally before deployment.
+# Do not start while the old CSN fetchmail is running.
+set postmaster "csn"
+set no bouncemail
+set softbounce
+set syslog
+set idfile "/home/fetchcsn/.fetchids"
+
+defaults
+    proto POP3
+    uidl
+    no mimedecode
+    fetchall
+    nokeep
+    ssl
+    sslcertck
+    smtphost "127.0.0.1/25"
+    smtpname "csn@imap.umeoka.co.jp"
+
+poll mail.blue.shared-server.net with proto POP3 port 995
+    user "info@coolingshop.net" there with password "__CSN_INFO_PASSWORD__" is csn here
+    user "shop@coolingshop.net" there with password "__CSN_SHOP_PASSWORD__" is csn here
+    user "auction@coolingshop.net" there with password "__CSN_AUCTION_PASSWORD__" is csn here
+    user "store@coolingshop.net" there with password "__CSN_STORE_PASSWORD__" is csn here
+    user "conform@coolingshop.net" there with password "__CSN_CONFORM_PASSWORD__" is csn here
+    user "pay@coolingshop.net" there with password "__CSN_PAY_PASSWORD__" is csn here
+    user "quote@coolingshop.net" there with password "__CSN_QUOTE_PASSWORD__" is csn here
+    user "support@coolingshop.net" there with password "__CSN_SUPPORT_PASSWORD__" is csn here
+    user "bank@coolingshop.net" there with password "__CSN_BANK_PASSWORD__" is csn here
+    user "error-mail@coolingshop.net" there with password "__CSN_ERROR-MAIL_PASSWORD__" is csn here
+    user "2013@coolingshop.net" there with password "__CSN_2013_PASSWORD__" is csn here

@@ -1,0 +1,146 @@
+{
+  "fetchmail_syntax": {
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "sieve_compile": {
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "systemd_units": {
+    "exit_code": 0,
+    "stderr": "sixcore-folder-sync.timer: Failed to open /etc/systemd/system/sixcore-folder-sync.timer: Permission denied\nmail-backup.timer: Failed to open /etc/systemd/system/mail-backup.timer: Permission denied\nmail-backup-maintenance.timer: Failed to open /etc/systemd/system/mail-backup-maintenance.timer: Permission denied\nfetchmail-umeoka.timer: Failed to open /etc/systemd/system/fetchmail-umeoka.timer: Permission denied\n"
+  },
+  "systemd_units_isolated": {
+    "exit_code": 0,
+    "stderr": ""
+  },
+  "parsed_accounts": [
+    {
+      "server": "mail.blue.shared-server.net",
+      "protocol": "POP3",
+      "service": "995",
+      "remote_user": "info@coolingshop.net",
+      "localnames": [
+        "csn"
+      ],
+      "ssl": 1,
+      "sslcertck": 1,
+      "keep": 0,
+      "fetchall": 1,
+      "mda": null,
+      "smtphunt": [
+        "127.0.0.1/25"
+      ],
+      "smtpname": "csn@imap.umeoka.co.jp"
+    },
+    {
+      "server": "mail.blue.shared-server.net",
+      "protocol": "POP3",
+      "service": "995",
+      "remote_user": "shop@coolingshop.net",
+      "localnames": [
+        "csn"
+      ],
+      "ssl": 1,
+      "sslcertck": 1,
+      "keep": 0,
+      "fetchall": 1,
+      "mda": null,
+      "smtphunt": [
+        "127.0.0.1/25"
+      ],
+      "smtpname": "csn@imap.umeoka.co.jp"
+    },
+    {
+      "server": "mail.blue.shared-server.net",
+      "protocol": "POP3",
+      "service": "995",
+      "remote_user": "auction@coolingshop.net",
+      "localnames": [
+        "csn"
+      ],
+      "ssl": 1,
+      "sslcertck": 1,
+      "keep": 0,
+      "fetchall": 1,
+      "mda": null,
+      "smtphunt": [
+        "127.0.0.1/25"
+      ],
+      "smtpname": "csn@imap.umeoka.co.jp"
+    },
+    {
+      "server": "mail.blue.shared-server.net",
+      "protocol": "POP3",
+      "service": "995",
+      "remote_user": "store@coolingshop.net",
+      "localnames": [
+        "csn"
+      ],
+      "ssl": 1,
+      "sslcertck": 1,
+      "keep": 0,
+      "fetchall": 1,
+      "mda": null,
+      "smtphunt": [
+        "127.0.0.1/25"
+      ],
+      "smtpname": "csn@imap.umeoka.co.jp"
+    },
+    {
+      "server": "mail.blue.shared-server.net",
+      "protocol": "POP3",
+      "service": "995",
+      "remote_user": "conform@coolingshop.net",
+      "localnames": [
+        "csn"
+      ],
+      "ssl": 1,
+      "sslcertck": 1,
+      "keep": 0,
+      "fetchall": 1,
+      "mda": null,
+      "smtphunt": [
+        "127.0.0.1/25"
+      ],
+      "smtpname": "csn@imap.umeoka.co.jp"
+    },
+    {
+      "server": "mail.blue.shared-server.net",
+      "protocol": "POP3",
+      "service": "995",
+      "remote_user": "pay@coolingshop.net",
+      "localnames": [
+        "csn"
+      ],
+      "ssl": 1,
+      "sslcertck": 1,
+      "keep": 0,
+      "fetchall": 1,
+      "mda": null,
+      "smtphunt": [
+        "127.0.0.1/25"
+      ],
+      "smtpname": "csn@imap.umeoka.co.jp"
+    },
+    {
+      "server": "mail.blue.shared-server.net",
+      "protocol": "POP3",
+      "service": "995",
+      "remote_user": "quote@coolingshop.net",
+      "localnames": [
+        "csn"
+      ],
+      "ssl": 1,
+      "sslcertck": 1,
+      "keep": 0,
+      "fetchall": 1,
+      "mda": null,
+      "smtphunt": [
+        "127.0.0.1/25"
+      ],
+      "smtpname": "csn@imap.umeoka.co.jp"
+    }
+  ]
+}

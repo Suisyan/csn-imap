@@ -1,0 +1,11 @@
+[Unit]
+Description=Poll CSN mail after each completed fetch
+
+[Timer]
+OnBootSec=1min
+OnUnitInactiveSec=15s
+AccuracySec=1s
+Unit=fetchmail-csn.service
+
+[Install]
+WantedBy=timers.target

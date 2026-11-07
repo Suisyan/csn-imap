@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily CSN old-to-new standby synchronization
+
+[Timer]
+OnCalendar=*-*-* 03:30:00 Asia/Tokyo
+Persistent=true
+AccuracySec=1min
+Unit=csn-standby-sync.service
+
+[Install]
+WantedBy=timers.target

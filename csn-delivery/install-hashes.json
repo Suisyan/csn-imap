@@ -1,0 +1,7 @@
+{
+  "fetchmailrc.template": "4de42ffb5ee3a541075f696bffc08321c2f54f439555b94c6c863a6184e043d1",
+  "fetchmail-csn.service": "996ec1924d10004960b340ccd06b44f97123e65a3f451df7f95fa06b4cf0acd9",
+  "fetchmail-csn.timer": "202962834e190f7639a8bde4951bee7115175113cc2602db68490c97c26c9711",
+  "csn.sieve": "29edccdffb2738edce8de3e047d5d84e16f42f7c5fb3b19a262dde9a0d5a4f03",
+  "syntax-only-dovecot.conf": "67e9c1a7a2005c71b8773f463ba878401d5350c2be3738c54e4c04ed6333ef00"
+}
